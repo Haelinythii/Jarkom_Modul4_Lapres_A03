@@ -1,5 +1,9 @@
 # Jarkom_Modul4_Lapres_A03
 
+## Pembagian IP Server
+
+Untuk membagi IPserver, digunakan IP DMZ yang ada di modul pengenalan UML. Untuk kelompok A03 mendapatkan IP DMZ 10.151.73.32/29. Karena servernya terdapat 2, kita bisa membaginya seperti cara VLSM, yaitu membagi 2 menjadi netmask /30. Sehingga Mojokerto akan mendapat IP NID 10.151.73.32/30 dan Malang mendapat 10.151.73.36/30 dengan masing-masing 2 usable ip yaitu untuk interface router dan servernya itu sendiri.
+
 ## Soal VLSM
 
 
