@@ -16,6 +16,21 @@ Subnet besar yang dibentuk memiliki NID 192.168.0.0 dengan netmask /19. Selanjut
 ![VLSM_2](img/VLSM_3.jpg)
 
 
+Membuat topologi pada CPT
+![topologi](img/topologi.png)
+
+Mengatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM.
+
+IP pada interface SURABAYA
+
+Mengatur IP pada client (nama UML nya)
+
+IP interface Client
+
+Melakukan Routing
+
+Static Routes
+
 ## Soal CIDR
 
 ![gambarcidrbulat2](img/cidrbulat2.jpg)
