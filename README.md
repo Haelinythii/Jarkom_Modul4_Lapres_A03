@@ -4,10 +4,14 @@
 
 
 pada teknik VLSM, subnet mask (netmask) akan diberikan sesuai dengan kebutuhan jumlah alamat IP dari subnet tersebut.
-
+![VLSM_1](img/VLSM_1.png)
 
 Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
+![VLSM_2](img/VLSM_2.jpg)
+Berdasarkan total IP dan netmask yang dibutuhkan, maka kita dapat menggunakan netmask /19 untuk memberikan pengalamatan IP pada subnet.
 
+Subnet besar yang dibentuk memiliki NID 192.168.0.0 dengan netmask /19. Selanjutnya, menghitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada.
+![VLSM_2](img/VLSM_3.jpg)
 
 
 ## Soal CIDR
