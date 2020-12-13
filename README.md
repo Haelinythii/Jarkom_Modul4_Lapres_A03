@@ -2,6 +2,14 @@
 
 ## Soal VLSM
 
+
+pada teknik VLSM, subnet mask (netmask) akan diberikan sesuai dengan kebutuhan jumlah alamat IP dari subnet tersebut.
+
+
+Menentukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan melakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
+
+
+
 ## Soal CIDR
 
 ![gambarcidrbulat2](img/cidrbulat2.jpg)
