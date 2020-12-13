@@ -102,6 +102,8 @@ Routing dilakukan pada :
 
 
 Pada CPT, Routing dilakukan pada menu Config > Routing > Static pada device Router. Lalu mengisi Static Routes sesuai dengan data di atas.
+contoh routing pada SURABAYA :
+
 ![interface_7](img/if_7.PNG)
 
 Setiap selesai memasukkan routing, tekan tombol Add.
