@@ -41,9 +41,7 @@ IP pada interface BATU yang mengarah ke SURABAYA
 
 - mengatur IP pada client SAMPANG dengan cara :
 
-Masuk ke client
-Pilih tab Desktop
-Pilih IP Configuration
+Pertama, masuk ke client. Kemudian, pilih tab Desktop. Selanjutnya, pilih IP Configuration.
 
 ![interface_2](img/if_2.PNG)
 ![interface_2](img/if_3.PNG)
@@ -53,10 +51,60 @@ Pilih IP Configuration
 ![interface_6](img/if_6.PNG)
 
 ### ROUTING
-Melakukan Routing
-Pada CPT, Routing dapat dilakukan pada menu Config > Routing > Static pada device Router. Lalu isi Static Routes seperti gambar dibawah pada SURABAYA dan tekan tombol Add
 
-Static Routes
+Routing dilakukan pada :
+
+#### SURABAYA
+
+- A3 : nexthop_PASURUAN (192.168.0.4/30 via 192.168.0.2)
+- A4 : nexthop_PASURUAN (192.168.0.128/25 via 192.168.0.2)
+- A5 : nexthop_BATU (192.168.2.0/23 via 192.168.0.10)
+- A7 : nexthop_PASURUAN (192.168.16.0/22 via 192.168.0.2)
+- A8 : nexthop_PASURUAN (192.168.8.0/21 via 192.168.0.2)
+- A9 : nexthop_BATU (192.168.0.16/28 via 192.168.0.10)
+- A10 : nexthop_BATU (192.168.20.0/22 via 192.168.0.10)
+- A11 : nexthop_BATU (192.168.0.12/30 via 192.168.0.10)
+- A12 : nexthop_BATU (192.168.24.0/22 via 192.168.0.10)
+- A13 : nexthop_BATU (192.168.1.0/24 via 192.168.0.10)
+- MALANG : nexthop_BATU (10.151.73.36/30 via 192.168.0.10)
+
+#### PASURUAN
+
+- Default Routing : nexthop_SURABAYA (0.0.0.0/0 via 192.168.0.1)
+- A4 : nexthop_PROBOLINGGO (192.168.0.128/25 via 192.168.0.6)
+- A8 : nexthop_PROBOLINGGO (192.168.8.0/21 via 192.168.0.6)
+
+
+#### PROBOLINGGO
+
+- Default Routing : nexthop_PASURUAN (0.0.0.0/0 via 192.168.0.5)
+
+#### BATU
+
+- Default Routing : nexthop_SURABAYA (0.0.0.0/0 via 192.168.0.9)
+- A9 : nexthop_MADIUN (192.168.0.16/28 via 192.168.2.2)
+- A12 : nexthop_BLITAR (192.168.24.0/22 via 192.168.0.14)
+- A13 : nexthop_KEDIRI (192.168.1.0/24 via 192.168.0.14)
+- MALANG : nexthop_KEDIRI (10.151.73.36/30 via 192.168.0.14)
+
+#### MADIUN
+
+- Default Routing : nexthop_BATU (0.0.0.0/0 via 192.168.2.1)
+
+#### KEDIRI
+
+- Default Routing : nexthop_BATU (0.0.0.0/0 via 192.168.0.13)
+- A12 : nexthop_BLITAR (192.168.24.0/22 via 192.168.1.2)
+
+#### BLITAR :
+
+- Default Routing : nexthop_KEDIRI (0.0.0.0/0 via 192.168.1.1)
+
+
+Pada CPT, Routing dilakukan pada menu Config > Routing > Static pada device Router. Lalu mengisi Static Routes sesuai dengan data di atas.
+![interface_7](img/if_7.PNG)
+
+Setiap selesai memasukkan routing, tekan tombol Add.
 
 ## Soal CIDR
 
