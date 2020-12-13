@@ -15,19 +15,42 @@ Berdasarkan total IP dan netmask yang dibutuhkan, maka kita dapat menggunakan ne
 Subnet besar yang dibentuk memiliki NID 192.168.0.0 dengan netmask /19. Selanjutnya, menghitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada.
 ![VLSM_2](img/VLSM_3.jpg)
 
-
+### TOPOLOGI
 Membuat topologi pada CPT
 ![topologi](img/topologi.png)
 
-Mengatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM.
+### SUBNETTING
+Mengatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM. Sementara itu, Cloud diberikan IP TUNTAP dan server diberikan IP DMZ.
+Interface dapat diatur pada menu Config > INTERFACE > “nama interface” dengan mengisi alamat IP dan subnet mask dari subnet interface tersebut.
+Contoh :
+- mengatur IP pada subnet A1
 
-IP pada interface SURABAYA
+IP pada interface SURABAYA yang mengarah ke SAMPANG
+![interface_1](img/if_1.PNG)
 
-Mengatur IP pada client (nama UML nya)
+- mengatur IP pada subnet A6
 
-IP interface Client
+IP pada interface SURABAYA yang mengarah ke BATU
+![interface_4](img/if_4.PNG)
 
+IP pada interface BATU yang mengarah ke SURABAYA 
+![interface_5](img/if_5.PNG)
+
+- mengatur IP pada client SAMPANG dengan cara :
+
+Masuk ke client
+Pilih tab Desktop
+Pilih IP Configuration
+
+![interface_2](img/if_2.PNG)
+![interface_2](img/if_3.PNG)
+
+- mengatur IP pada server MOJOKERTO
+![interface_6](img/if_6.PNG)
+
+### ROUTING
 Melakukan Routing
+Pada CPT, Routing dapat dilakukan pada menu Config > Routing > Static pada device Router. Lalu isi Static Routes seperti gambar dibawah pada SURABAYA dan tekan tombol Add
 
 Static Routes
 
